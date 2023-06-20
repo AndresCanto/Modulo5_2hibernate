@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class" > <!-- manejador para conectarse a otra interfaz -->
+			com.mysql.cj.jdbc.Driver
+		</property>
+		<property name="connection.url" >
+			jdbc:mysql://localhost/jugueteriajc
+		</property>
+		<property name="connection.username" >
+			andres
+		</property>
+		<property name="connection.password" >
+			qwerty123456
+		</property>
+		<property name="connection.pool_size" > <!-- sesiones en simultaneo -->
+			5
+		</property>
+		<property name="dialect" >
+			org.hibernate.dialect.MySQL5Dialect
+		</property>  <!-- como se van a llevar acabo las consultas. es el cambio que hace hibernate a mysql -->
+		<property name="show_sql" >
+			true <!-- cuando salga a produccion se pone false -->
+		</property>  <!-- para debugear en la fase de derarrollo -->
+		<mapping class="beans.Juguete"/>
+		<mapping class="beans.Proveedor"/>
+	</session-factory>
+</hibernate-configuration>
