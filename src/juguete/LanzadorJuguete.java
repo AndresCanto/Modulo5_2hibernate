@@ -1,4 +1,4 @@
-package jtable_jugueteriaHibernate;
+package juguete;
 
 public class LanzadorJuguete 
 {

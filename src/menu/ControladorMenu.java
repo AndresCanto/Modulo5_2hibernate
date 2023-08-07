@@ -3,7 +3,7 @@ package menu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import jtable_jugueteriaHibernate.LanzadorJuguete;
+import juguete.LanzadorJuguete;
 import proveedor.LanzadorProveedor;
 
 public class ControladorMenu implements ActionListener
@@ -39,7 +39,7 @@ public class ControladorMenu implements ActionListener
 			System.out.println("great");
 			LanzadorJuguete l = new LanzadorJuguete();
 			l.LlamarJuguete();
-			visM.ocultarGUI();
+//			visM.ocultarGUI();
 		}
 		
 		if(e.getSource()==visM.btnProveedores)

@@ -11,6 +11,8 @@ import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
+import com.formdev.flatlaf.FlatDarkLaf;
+
 //import com.formdev.flatlaf.FlatDarkLaf;
 
 public class VistaProveedor extends JFrame 
@@ -29,23 +31,15 @@ public class VistaProveedor extends JFrame
 
 	public void lanzarGUI() 
 	{
-//		try {
-//		    UIManager.setLookAndFeel( new FlatDarkLaf() );
-//		} catch( Exception ex ) {
-//		    System.err.println( "Failed to initialize LaF" );
-//		}
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					crearGUI();
-					setVisible(true);
-					setLocationRelativeTo(null);
-					termino = true;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+		try {
+		    UIManager.setLookAndFeel( new FlatDarkLaf() );
+		} catch( Exception ex ) {
+		    System.err.println( "Failed to initialize LaF" );
+		}
+		crearGUI();
+		setVisible(true);
+		setLocationRelativeTo(null);
+		termino = true;
 	}
 	
 	public void ocultarGUI() {

@@ -3,7 +3,7 @@ package proveedor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import jtable_jugueteriaHibernate.LanzadorJuguete;
+import juguete.LanzadorJuguete;
 
 public class ControladorProveedor implements ActionListener
 {
